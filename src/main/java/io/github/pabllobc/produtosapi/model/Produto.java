@@ -12,7 +12,7 @@ public class Produto {
 
     @Id
     @Column(unique = true)
-    private int id;
+    private String id;
     @Column
     private String nome;
     @Column
@@ -20,11 +20,11 @@ public class Produto {
     @Column
     private double preco;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -61,5 +61,6 @@ public class Produto {
                 ", preco=" + preco +
                 '}';
     }
+
 }
 
